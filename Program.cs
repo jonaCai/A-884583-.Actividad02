@@ -10,14 +10,11 @@ namespace A_884583_.Actividad02
     {
         static void Main(string[] args)
         {
-           
             string eleccion;
-
             Console.WriteLine("Bienvenido al sistema de control de Stock FarmaCAI, que desea hacer?:");
             Console.WriteLine("A) Ingresar catálogo de productos.");
             Console.WriteLine("B) Ingresar pedidos/entregas.");
             Console.WriteLine("C) Finalizar y mostrar stock final de los productos.");
-
             do
             {
                 Console.WriteLine();
@@ -36,7 +33,6 @@ namespace A_884583_.Actividad02
                         Console.WriteLine("1- para Pedidos:");
                         Console.WriteLine("2- para Entregas:");
                         
-                       
                         do
                         {
                             Console.WriteLine();
@@ -57,27 +53,19 @@ namespace A_884583_.Actividad02
                                   
                                     ; break;
 
-
                             }
                         } while (eleccion !="1" && eleccion !="2");
-
-
-
+                        
                         ; break;
                        
-
-
                     case "C":
 
                         CatalogoDeProductos.mostrarProductos();
 
 
-                        Console.WriteLine("Adios.");
+                        Console.WriteLine("Adios, presione una tecla para terminar.");
                         ; break;
                     default: Console.WriteLine("Debe ingresar: 'A', 'B' o 'C'"); break;
-
-
-
 
                 }
             } while (eleccion != "C");
@@ -85,13 +73,7 @@ namespace A_884583_.Actividad02
 
             Console.ReadKey();
         }
-
         
-
-      
-
-
-
     }
 
 
